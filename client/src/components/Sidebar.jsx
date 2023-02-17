@@ -12,7 +12,7 @@ const Sidebar = () => {
             <NavLink to={"/dashboard"}><IoHome/> Dashboard</NavLink>
           </li>
           <li>
-          <NavLink to={"/product"}><IoPricetag/> Products</NavLink>
+          <NavLink to={"/products"}><IoPricetag/> Products</NavLink>
           </li>
         </ul>
         <p className="menu-label">Admin</p>
