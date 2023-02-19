@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/users" element={<Users />} />
         <Route path="/users/add" element={<AddUser />} />
@@ -29,4 +29,6 @@ function App() {
   );
 }
 
+// 2:21:10
+// https://www.youtube.com/watch?v=OJU0L9D-Zdo&t=4722s
 export default App;
