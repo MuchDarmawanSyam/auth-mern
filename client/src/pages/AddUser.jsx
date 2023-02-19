@@ -20,7 +20,7 @@ const AddUser = () => {
       navigate("/");
     }
     if(user && user.role !== "admin"){
-      navigate('/dashboard')
+      navigate('/dashboard');
     }
   }, [isError, user,navigate]);
 
