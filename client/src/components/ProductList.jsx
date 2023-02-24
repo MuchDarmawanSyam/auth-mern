@@ -27,7 +27,7 @@ const ProductList = () => {
         <h1 className='title'>Products</h1>
         <h2 className='subtitle'>List of Products</h2>
         <Link to={'/products/add'} className='button is-primary mb-2'>Add New Product</Link>
-        <table className='table is-striped is-fullwidth'>
+        <table className='table is-striped is-fullwidth mb-3'>
             <thead>
                 <tr>
                     <th>No</th>
@@ -45,7 +45,7 @@ const ProductList = () => {
                         <td>{product.price}</td>
                         <td>{product.user.name}</td>
                         <td>
-                            <Link to={`/product/edit/${product.uuid}`} className="button is-small is-info mr-2" >Edit</Link>
+                            <Link to={`/products/edit/${product.uuid}`} className="button is-small is-info mr-2" >Edit</Link>
                             <button onClick={() => deleteProduct(product.uuid)} className="button is-small is-danger">Delete</button>
                         </td>
                     </tr>
