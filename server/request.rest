@@ -6,11 +6,11 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "Much Darmawan Syam",
-    "email": "syam7@gmail.com",
-    "password": "987654",
-    "confirmPassword": "987654",
-    "role": "admin"
+    "name": "Putri",
+    "email": "putri@gmail.com",
+    "password": "qwerty",
+    "confirmPassword": "qwerty",
+    "role": "user"
 }
 
 
