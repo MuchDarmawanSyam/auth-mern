@@ -42,5 +42,7 @@ const Products = db.define('product', {
 // Relasi One to Many (Satu user bisa menginput banyak product)
 Users.hasMany(Products);
 Products.belongsTo(Users, {foreignKey: 'userId'});
+// NOTE: Untuk membuat custom foreign key nama field harus sama dengan nama tabel yg define pada model asal
+// dan ditambah Id, cth product+Id menjadi productId
 
 export default Products;
