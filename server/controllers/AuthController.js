@@ -7,11 +7,9 @@ export const Login = async(req, res) => {
             email: req.body.email
         }
     });
-    
-    const hash1 = await argon2.hash(req.body.password); // untuk mengatasi "TypeError: pchstr must contain a $ as first char"
 
     if(!user) return res.status(404).json({msg: "User tidak ditemukan"});
-    const match = await argon2.verify(hash1, user.password); // di swap nilai var inputan dan nilai var database
+    const match = await argon2.verify(user.password, req.body.password); // //verify(passDatabase, passInputan)
     if(!match) return res.status(400).json({msg: "Wrong Password"});
     
     req.session.userId = user.uuid;
